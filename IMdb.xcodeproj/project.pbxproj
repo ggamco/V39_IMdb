@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093D8C231EBCCB8E009DA376 /* IM_ListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D8C221EBCCB8E009DA376 /* IM_ListMoviesViewController.swift */; };
+		093D8C251EBCCBA3009DA376 /* IM_ListFavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D8C241EBCCBA3009DA376 /* IM_ListFavoriteViewController.swift */; };
+		093D8C271EBCCBBB009DA376 /* IM_DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D8C261EBCCBBB009DA376 /* IM_DetailMovieViewController.swift */; };
+		093D8C291EBCCBDF009DA376 /* IM_DetailCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D8C281EBCCBDF009DA376 /* IM_DetailCustomCell.swift */; };
+		093D8C2B1EBCE235009DA376 /* LocalCoreDateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D8C2A1EBCE235009DA376 /* LocalCoreDateService.swift */; };
 		09DB54081EB3B2C400F2185E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB54071EB3B2C400F2185E /* AppDelegate.swift */; };
 		09DB540D1EB3B2C400F2185E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DB540B1EB3B2C400F2185E /* Main.storyboard */; };
 		09DB540F1EB3B2C400F2185E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DB540E1EB3B2C400F2185E /* Assets.xcassets */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		093D8C221EBCCB8E009DA376 /* IM_ListMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IM_ListMoviesViewController.swift; sourceTree = "<group>"; };
+		093D8C241EBCCBA3009DA376 /* IM_ListFavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IM_ListFavoriteViewController.swift; sourceTree = "<group>"; };
+		093D8C261EBCCBBB009DA376 /* IM_DetailMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IM_DetailMovieViewController.swift; sourceTree = "<group>"; };
+		093D8C281EBCCBDF009DA376 /* IM_DetailCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IM_DetailCustomCell.swift; sourceTree = "<group>"; };
+		093D8C2A1EBCE235009DA376 /* LocalCoreDateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCoreDateService.swift; sourceTree = "<group>"; };
 		09DB54041EB3B2C400F2185E /* IMdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMdb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DB54071EB3B2C400F2185E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DB540C1EB3B2C400F2185E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				09DB54071EB3B2C400F2185E /* AppDelegate.swift */,
+				093D8C221EBCCB8E009DA376 /* IM_ListMoviesViewController.swift */,
+				093D8C241EBCCBA3009DA376 /* IM_ListFavoriteViewController.swift */,
+				093D8C261EBCCBBB009DA376 /* IM_DetailMovieViewController.swift */,
+				093D8C281EBCCBDF009DA376 /* IM_DetailCustomCell.swift */,
 				09DB54261EB3CD1100F2185E /* SERVICE */,
 				09DB54271EB3CD4C00F2185E /* MODEL */,
 				09DB54281EB3CD9B00F2185E /* API */,
@@ -97,6 +111,7 @@
 			children = (
 				09DB54241EB3C08800F2185E /* CoreDataStack.swift */,
 				09DB542D1EB3D28400F2185E /* RemoteItunesMovieService.swift */,
+				093D8C2A1EBCE235009DA376 /* LocalCoreDateService.swift */,
 			);
 			name = SERVICE;
 			sourceTree = "<group>";
@@ -262,12 +277,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093D8C2B1EBCE235009DA376 /* LocalCoreDateService.swift in Sources */,
 				09DB54201EB3BB3E00F2185E /* API_UTILS.swift in Sources */,
 				09DB54081EB3B2C400F2185E /* AppDelegate.swift in Sources */,
 				09DB542A1EB3CE0E00F2185E /* MovieModel.swift in Sources */,
+				093D8C291EBCCBDF009DA376 /* IM_DetailCustomCell.swift in Sources */,
 				09DB542C1EB3D16400F2185E /* MovieManager+Mapping.swift in Sources */,
 				09DB54231EB3C04A00F2185E /* IMdb.xcdatamodeld in Sources */,
+				093D8C231EBCCB8E009DA376 /* IM_ListMoviesViewController.swift in Sources */,
+				093D8C251EBCCBA3009DA376 /* IM_ListFavoriteViewController.swift in Sources */,
 				09DB542E1EB3D28400F2185E /* RemoteItunesMovieService.swift in Sources */,
+				093D8C271EBCCBBB009DA376 /* IM_DetailMovieViewController.swift in Sources */,
 				09DB54251EB3C08800F2185E /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
