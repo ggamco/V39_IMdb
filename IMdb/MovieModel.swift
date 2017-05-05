@@ -18,7 +18,7 @@ class MovieModel {
     var category: String?
     var director: String?
     
-    init(pId: String?, pTitle: String?, pOrder: Int?, pSummary: String, pImage: String?, pCategory: String?, pDirector: String?) {
+    init(pId: String?, pTitle: String?, pOrder: Int?, pSummary: String?, pImage: String?, pCategory: String?, pDirector: String?) {
         self.id = pId
         self.title = pTitle
         self.order = pOrder

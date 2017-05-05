@@ -64,6 +64,7 @@ class LocalCoreDataService {
                     order += 1
                     
                 }
+                //metodo de remover los no favoritos
                 
                 remoteHandler(self.queryTopMovies())
                 
@@ -84,7 +85,7 @@ class LocalCoreDataService {
         
         request.sortDescriptors = [sortDescription]
         
-        let customPredicate = NSPredicate(format: "format = \(false)")
+        let customPredicate = NSPredicate(format: "favorito = \(false)")
         request.predicate = customPredicate
         
         do{
@@ -134,7 +135,7 @@ class LocalCoreDataService {
         
         let context = stack.persistentContainer.viewContext
         let request : NSFetchRequest<MovieManager> = MovieManager.fetchRequest()
-        let customPredicate = NSPredicate(format: "id = \(id) AND favorito = \(favorito)")
+        let customPredicate = NSPredicate(format: "id = \(id) and favorito = \(favorito)")
         request.predicate = customPredicate
         
         do {

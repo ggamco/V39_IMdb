@@ -28,14 +28,14 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ems-UD-Sgq">
                                 <rect key="frame" x="0.0" y="108" width="375" height="510"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UFh-3B-MHu">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="UFh-3B-MHu">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="kVh-sT-NwD">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="kVh-sT-NwD" customClass="IM_DetailCustomCell" customModule="IMdb" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="113" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -49,6 +49,9 @@
                                             </subviews>
                                         </view>
                                         <size key="customSize" width="113" height="170"/>
+                                        <connections>
+                                            <outlet property="myImageMovie" destination="xSu-dk-44I" id="91y-Lg-Gkv"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -66,6 +69,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="rcP-ke-Kga"/>
                     <connections>
+                        <outlet property="myCollectionView" destination="Ems-UD-Sgq" id="ecy-fJ-yWL"/>
+                        <outlet property="mySerarchBar" destination="Ccv-yR-lDc" id="5E6-Me-SfV"/>
                         <segue destination="iRK-xP-94b" kind="show" identifier="detailSegue" id="ptl-7G-Y4g"/>
                     </connections>
                 </viewController>
@@ -114,7 +119,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="t3k-EW-qZC">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="t3k-EW-qZC" customClass="IM_DetailCustomCell" customModule="IMdb" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="113" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -128,6 +133,9 @@
                                             </subviews>
                                         </view>
                                         <size key="customSize" width="113" height="170"/>
+                                        <connections>
+                                            <outlet property="myImageMovie" destination="6fP-dp-wqM" id="mpz-vl-DdC"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -320,6 +328,6 @@
         <image name="ver-icon" width="25" height="10"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TAR-1n-8w5"/>
+        <segue reference="ptl-7G-Y4g"/>
     </inferredMetricsTieBreakers>
 </document>

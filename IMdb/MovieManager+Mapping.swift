@@ -14,7 +14,7 @@ extension MovieManager {
     func mappedObj() -> MovieModel {
         
         return MovieModel(pId: self.id!,
-                          pTitle: self.title!,
+                          pTitle: self.title,
                           pOrder: Int(self.order),
                           pSummary: self.summary!,
                           pImage: self.image!,
